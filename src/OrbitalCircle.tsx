@@ -10,7 +10,7 @@ interface OrbitalProps {
 }
 
 const OrbitalCircle = (props : OrbitalProps) => {
-    const {circleFixedStyle, circleOrbitStyle, parentStyle} = useStyle(props.w, props.h, props.scale)
+    const {circleFixedStyle, circleOrbitStyle, parentStyle} = useStyle(props.scale, props.w, props.h)
     const circles  = []
     for (let i = 0; i < props.n; i++) {
         circles.push((<div key = {`oc_${i}`} style = {circleOrbitStyle(i, props.n)}></div>))

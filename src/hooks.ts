@@ -43,7 +43,7 @@ export const useDimension = () => {
     }, [])
     return {
         w, 
-        h, 
+        h
     }
 }
 const sinify : Function = (scale : number) => Math.sin(scale * Math.PI)
@@ -88,8 +88,8 @@ export const useStyle = (scale : number, w : number, h : number) => {
         circleFixedStyle() : CSSProperties  {
             const left = `${-r / 2}px`
             const top = `${-r / 2}px`
-            const width = `${-r / 2}px`
-            const height = `${-r / 2}px`
+            const width = `${r}px`
+            const height = `${r}px`
             const background : string = '#304FFE'
             return {
                 position, 
